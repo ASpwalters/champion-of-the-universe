@@ -11,7 +11,7 @@ export interface Hero {
 
 export const HeroCard: React.FC<Hero> = ({ name, maxHealth, abilities, image }) => {
   return (
-    <Card name={name} image={image} className="text-white">
+    <Card image={image} className="text-white">
       <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-gray-900 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-b from-transparent to-gray-900" />
       <div className="absolute top-2 left-2 bottom-2 right-2">

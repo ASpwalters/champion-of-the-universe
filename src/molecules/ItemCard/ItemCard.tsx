@@ -28,7 +28,7 @@ export const ItemCard: React.FC<Item> = ({
   image,
 }) => {
   return (
-    <Card name={name} legendary={legendary} className="text-white">
+    <Card legendary={legendary} className="text-white">
       <div className="relative p-2 bg-gray-800">
         <div className="font-bold">{name}</div>
         {legendary && <div className="text-legendary">Legendary</div>}
