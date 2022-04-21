@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
 import items from '@/data/items.json'
+import { Item } from '@/molecules/ItemCard'
 import { ItemsGrid } from '@/organisms/ItemsGrid'
 
 export const ItemsTemplate: React.FC = () => {
@@ -11,7 +12,7 @@ export const ItemsTemplate: React.FC = () => {
       </header>
       <main>
         <Container>
-          <ItemsGrid items={items} />
+          <ItemsGrid items={items as Item[]} />
         </Container>
       </main>
     </div>

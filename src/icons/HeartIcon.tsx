@@ -16,8 +16,8 @@ export const HeartIcon: React.FC<RectangularTwoColorIconProps> = ({
       data-cy="heart-icon"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
+      width={width ?? ''}
+      height={height ?? ''}
       viewBox="0 0 14.238 13"
     >
       <g id="Heart" transform="translate(0 0)">
