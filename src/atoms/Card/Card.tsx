@@ -2,15 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 
 interface CardProps {
-  name: string
   legendary?: boolean
   image?: string
   children?: React.ReactNode
   className?: string
-  headerClasses?: string
 }
 
-export const Card: React.FC<CardProps> = ({ name, legendary = false, image, children, className, headerClasses }) => {
+export const Card: React.FC<CardProps> = ({ legendary = false, image, children, className }) => {
   return (
     <div
       className={classNames(
