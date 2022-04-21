@@ -4,6 +4,7 @@ import { RangedIcon } from '@/icons/RangedIcon'
 import { ShieldIcon } from '@/icons/ShieldIcon'
 import { StarIcon } from '@/icons/StarIcon'
 import { SwordIcon } from '@/icons/SwordIcon'
+import classNames from "classnames";
 
 export interface Item {
   name: string
@@ -27,10 +28,14 @@ export const ItemCard: React.FC<Item> = ({
   image,
 }) => {
   return (
-    <Card name={name} legendary={legendary} className="text-white" headerClasses="bg-gray-800">
+    <Card name={name} legendary={legendary} className="text-white">
+      <div className="relative p-2 bg-gray-800">
+        <div className="font-bold">{name}</div>
+        {legendary && <div className="text-legendary">Legendary</div>}
+      </div>
       <div className="w-full h-full flex flex-col relative">
         <div className="h-full w-full flex flex-col bg-gray-800">
-          <div className="mt-auto overflow-y-auto max-h-2/3 p-4 w-full text-gray-50">
+          <div className="mt-auto overflow-y-auto max-h-full p-4 w-full text-gray-50">
             <ul>
               {abilities.map((ability) => (
                 <li key={ability}>{ability}</li>

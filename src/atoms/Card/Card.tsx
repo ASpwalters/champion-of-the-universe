@@ -22,10 +22,6 @@ export const Card: React.FC<CardProps> = ({ name, legendary = false, image, chil
     >
       <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-gray-900 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-b from-transparent to-gray-900" />
-      <div className={classNames('relative p-2', headerClasses)}>
-        <div className="font-bold">{name}</div>
-        {legendary && <div className="text-legendary">Legendary</div>}
-      </div>
       {children}
     </div>
   )

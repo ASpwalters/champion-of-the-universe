@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <main className="text-center">
         <Container>
           <h1 className="text-xl text-center">Champions of the Universe!</h1>
-          <p className="text-lg">An original game by Joseph McKenna</p>
+          <p className="text-lg text-gray-500">An original game by Joseph McKenna</p>
         </Container>
       </main>
     </div>
