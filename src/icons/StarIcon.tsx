@@ -11,8 +11,8 @@ export const StarIcon: React.FC<RectangularOneColorIconProps> = ({
     <svg
       data-cy="star-icon"
       className={className}
-      width={width}
-      height={height}
+      width={width ?? ''}
+      height={height ?? ''}
       viewBox="0 0 15 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,3 +1,37 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint", "no-only-tests"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-handler-names": 0,
+    "react/react-in-jsx-scope": "off",
+    "camelcase": 0,
+    "no-console": "error",
+    "react/jsx-no-bind": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "prettier/prettier": "error",
+    "no-only-tests/no-only-tests": [
+      "error",
+      { "block": ["describe", "context", "test", "it"], "focus": ["only", "focus", "skip"] }
+    ]
+  }
 }

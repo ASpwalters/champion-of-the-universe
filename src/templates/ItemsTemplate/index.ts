@@ -1,1 +1,1 @@
-export { HeroesTemplate } from './HeroesTemplate'
+export { ItemsTemplate } from './ItemsTemplate'

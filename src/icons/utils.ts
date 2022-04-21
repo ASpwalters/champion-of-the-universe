@@ -1,4 +1,4 @@
-import { colors } from '../../constants/colors'
+import { colors } from '@/constants/colors'
 
 export type IconColor = 'none' | keyof typeof colors
 
@@ -16,12 +16,12 @@ interface TwoColorIconProps {
 }
 
 interface SquareIconProps {
-  size?: number
+  size?: number | null
 }
 
 interface RectangularIconProps {
-  height?: number
-  width?: number
+  height?: number | null
+  width?: number | null
 }
 
 export interface SquareOneColorIconProps extends BaseIconProps, SquareIconProps, OneColorIconProps {}

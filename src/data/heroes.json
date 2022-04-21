@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Assassin",
+    "maxHealth": 8,
+    "abilities": [
+      "Attack +1",
+      "Any time you would take two or more damage from a single source, you take 1 less damage."
+    ],
+    "image": "/img/hero/assassin.webp"
+  },
+  {
+    "name": "Berserker",
+    "maxHealth": 12,
+    "abilities": [
+      "Attack +2",
+      "The defense number on your cards is treated as 1 instead of the printed number."
+    ],
+    "image": "/img/hero/berserker.webp"
+  },
+  {
+    "name": "Cleric",
+    "maxHealth": 8,
+    "abilities": [
+      "Healing +2"
+    ],
+    "image": "/img/hero/cleric.png"
+  },
+  {
+    "name": "Paladin",
+    "maxHealth": 10,
+    "abilities": [
+      "Attack +1",
+      "Healing +1"
+    ],
+    "image": "/img/hero/paladin.webp"
+  },
+  {
+    "name": "Ranger",
+    "maxHealth": 12,
+    "abilities": [
+      "Ranged attacks ignore defense."
+    ],
+    "image": "/img/hero/ranger.png"
+  },
+  {
+    "name": "Rogue",
+    "maxHealth": 12,
+    "abilities": [
+      "You can make an additional attack on your turn immediately after your first, but you must target the same opponent for both attacks."
+    ],
+    "image": "/img/hero/rogue.jpeg"
+  },
+  {
+    "name": "Sorcerer",
+    "maxHealth": 12,
+    "abilities": [
+      "Your magic can deal 1 damage and heal 1 health instead of its normal ability."
+    ],
+    "image": "/img/hero/sorcerer.png"
+  },
+  {
+    "name": "Warlock",
+    "maxHealth": 6,
+    "abilities": [
+      "Your magic can deal 3 damage or heal 3 health instead of its normal ability."
+    ],
+    "image": "/img/hero/warlock.jpeg"
+  },
+  {
+    "name": "Warrior",
+    "maxHealth": 10,
+    "abilities": [
+      "Defense +1",
+      "Damage from your attacks is reduced 1 less by defenses."
+    ],
+    "image": "/img/hero/warrior.webp"
+  },
+  {
+    "name": "Wizard",
+    "maxHealth": 15,
+    "abilities": [
+      "Your magic deals 1 damage in addition to its normal ability. All damage targets the same opponent."
+    ],
+    "image": "/img/hero/wizard.jpg"
+  }
+]

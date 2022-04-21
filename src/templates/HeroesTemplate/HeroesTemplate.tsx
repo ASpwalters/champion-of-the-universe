@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
 import heroes from '@/data/heroes.json'
-import { HeroesGrid } from '@/organisms/HeroesGrid/HeroesGrid'
+import { HeroesGrid } from '@/organisms/HeroesGrid'
 
 export const HeroesTemplate: React.FC = () => {
   return (

@@ -1,16 +1,16 @@
 import React from 'react'
 import { Grid } from '@/atoms/Grid'
-import { HeroCard, Hero } from '@/molecules/HeroCard'
+import { ItemCard, Item } from '@/molecules/ItemCard'
 
 interface HeroesGridProps {
-  heroes: Hero[]
+  items: Item[]
 }
 
-export const HeroesGrid: React.FC<HeroesGridProps> = ({ heroes }) => {
+export const ItemsGrid: React.FC<HeroesGridProps> = ({ items }) => {
   return (
     <Grid>
-      {heroes.map((hero) => (
-        <HeroCard key={hero.name} {...hero} />
+      {items.map((item) => (
+        <ItemCard key={item.name} {...item} />
       ))}
     </Grid>
   )

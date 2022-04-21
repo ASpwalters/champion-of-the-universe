@@ -1,5 +1,8 @@
 import { NextPage } from 'next'
+import { RulesTemplate } from '@/templates/RulesTemplate'
 
-export const ItemsPage: NextPage = () => {
-  return <div>WIP</div>
+export const RulesPage: NextPage = () => {
+  return <RulesTemplate />
 }
+
+export default RulesPage

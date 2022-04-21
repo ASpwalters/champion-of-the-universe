@@ -1,31 +1,63 @@
 import React from 'react'
 import { Card } from '@/atoms/Card'
-import { HeartIcon } from '@/icons/HeartIcon'
+import { RangedIcon } from '@/icons/RangedIcon'
+import { ShieldIcon } from '@/icons/ShieldIcon'
+import { StarIcon } from '@/icons/StarIcon'
+import { SwordIcon } from '@/icons/SwordIcon'
 
-export interface Hero {
+export interface Item {
   name: string
-  maxHealth: number
-  abilities: string[]
+  attack: number
+  defense: number
+  magic: string
+  legendary?: boolean
   image?: string
+  damageType?: 'ranged' | 'melee'
+  abilities?: string[]
 }
 
-export const HeroCard: React.FC<Hero> = ({ name, maxHealth, abilities, image }) => {
+export const ItemCard: React.FC<Item> = ({
+  name,
+  attack,
+  defense,
+  magic,
+  legendary = false,
+  damageType = 'melee',
+  abilities = [],
+  image,
+}) => {
   return (
-    <Card name={name} image={image} className="text-white">
-      <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-gray-900 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-b from-transparent to-gray-900" />
-      <div className="absolute top-2 left-2 bottom-2 right-2">
-        <div className="flex relative">
-          <div className="font-bold">{name}</div>
-          <div className="ml-auto flex items-center">
-            {maxHealth}
-            <HeartIcon color1="black" color2="red" className="ml-1" />
+    <Card name={name} legendary={legendary} className="text-white" headerClasses="bg-gray-800">
+      <div className="w-full h-full flex flex-col relative">
+        <div className="h-full w-full flex flex-col bg-gray-800">
+          <div className="mt-auto overflow-y-auto max-h-2/3 p-4 w-full text-gray-50">
+            <ul>
+              {abilities.map((ability) => (
+                <li key={ability}>{ability}</li>
+              ))}
+            </ul>
           </div>
         </div>
-        <div className="absolute bottom-0 overflow-y-auto max-h-2/3 p-4 w-full text-gray-50">
-          {abilities.map((ability) => (
-            <div key={ability}>{ability}</div>
-          ))}
+        <div className="h-1/4 flex flex-col bg-magic text-black relative text-center shrink-0">
+          <div className="absolute top-2 left-2 bottom-2 right-2">
+            <StarIcon color="white" width={null} height={null} />
+          </div>
+          <div className="relative w-full my-auto">{magic}</div>
+        </div>
+        <div className="h-1/4 w-full flex">
+          <div className="w-1/2 text-xl relative bg-attack">
+            {damageType === 'melee' && <SwordIcon color="black" size={null} className="rotate-90" />}
+            {damageType === 'ranged' && <RangedIcon color="black" size={null} />}
+            <div className="top-0 left-0 bottom-0 right-0 absolute flex flex-col">
+              <div className="h-fit w-fit m-auto leading-none">{attack}</div>
+            </div>
+          </div>
+          <div className="w-1/2 text-xl relative bg-defense">
+            <ShieldIcon color="black" size={null} />
+            <div className="flex flex-col top-0 left-0 bottom-0 right-0 absolute">
+              <div className="h-fit w-fit m-auto leading-none">{defense}</div>
+            </div>
+          </div>
         </div>
       </div>
     </Card>

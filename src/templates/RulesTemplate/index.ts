@@ -1,1 +1,1 @@
-export { ItemsTemplate } from './ItemsTemplate'
+export { RulesTemplate } from './RulesTemplate'

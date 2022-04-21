@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Warhammer",
+    "attack": 3,
+    "defense": 3,
+    "magic": "Heal 2 health and deal 1 damage.",
+    "legendary": true,
+    "image": "/img/item/warhammer.webp"
+  },
+  {
+    "name": "Poison-tipped Dagger",
+    "attack": 3,
+    "defense": 1,
+    "abilities": [
+      "Deal 1 damage before calculating damage when used as an attack of defense. The damage is dealt to the opponent involved in this combat."
+    ],
+    "magic": "Deal 2 damage and heal 1 health.",
+    "legendary": true,
+    "image": "/img/item/poison-tipped-dagger.webp"
+  },
+  {
+    "name": "Javelin",
+    "attack": 4,
+    "defense": 1,
+    "damageType": "ranged",
+    "magic": "Exhaust 1 card from each opponents discard piles.",
+    "legendary": true,
+    "image": "/img/item/javelin.webp"
+  },
+  {
+    "name": "Great Sword",
+    "attack": 4,
+    "defense": 2,
+    "magic": "Add 1 of your exhausted cards to your hand.",
+    "legendary": true,
+    "image": "/img/item/greatsword.png"
+  },
+  {
+    "name": "Battle Axe",
+    "attack": 3,
+    "defense": 3,
+    "magic": "Exhaust 1 random card from each opponents hand.",
+    "legendary": true,
+    "image": "/img/item/battle-axe.webp"
+  },
+  {
+    "name": "Long Bow",
+    "attack": 4,
+    "defense": 2,
+    "magic": "Add 2 cards from your discard pile to your hand.",
+    "legendary": true,
+    "damageType": "ranged"
+  },
+  {
+    "name": "Shield of Reflection",
+    "attack": 1,
+    "defense": 2,
+    "abilities": [
+      "Defends against crossbows.",
+      "Any combat damage dealt to a player who used this card as Defense is dealt to the attacker as well."
+    ],
+    "magic": "Non-combat damage doesn't hurt you this turn, including damage dealt before this Magic was used.",
+    "legendary": true
+  },
+  {
+    "name": "Wand",
+    "attack": 1,
+    "defense": 1,
+    "magic": "Deal 4 damage.",
+    "legendary": true
+  },
+  {
+    "name": "Crystal Ball",
+    "attack": 1,
+    "defense": 1,
+    "magic": "Look at each opponents hand and discard 2 cards.",
+    "legendary": true
+  },
+  {
+    "name": "Spellbook",
+    "attack": 1,
+    "defense": 1,
+    "magic": "Discard a card. You may look at each opponents hand and exhaust 1 card from each.",
+    "legendary": true
+  },
+  {
+    "name": "Rusty Short Sword",
+    "attack": 1,
+    "defense": 2,
+    "magic": "Deal 2 damage."
+  },
+  {
+    "name": "Short Sword",
+    "attack": 2,
+    "defense": 2,
+    "magic": "Deal 2 damage."
+  },
+  {
+    "name": "Rusty Long Sword",
+    "attack": 2,
+    "defense": 1,
+    "magic": "Deal 1 damage."
+  },
+  {
+    "name": "Long Sword",
+    "attack": 3,
+    "defense": 1,
+    "magic": "Deal 1 damage."
+  },
+  {
+    "name": "Worn Crossbow",
+    "attack": 1,
+    "defense": 2,
+    "abilities": [
+      "Can't be defended"
+    ],
+    "damageType": "ranged",
+    "magic": "Heal 2 health."
+  },
+  {
+    "name": "Crossbow",
+    "attack": 2,
+    "defense": 2,
+    "abilities": [
+      "Can't be defended"
+    ],
+    "damageType": "ranged",
+    "magic": "Heal 2 health."
+  },
+  {
+    "name": "Worn Short Bow",
+    "attack": 2,
+    "defense": 1,
+    "damageType": "ranged",
+    "magic": "Heal 1 health."
+  },
+  {
+    "name": "Short Bow",
+    "attack": 3,
+    "defense": 1,
+    "damageType": "ranged",
+    "magic": "Heal 1 health."
+  },
+  {
+    "name": "Shield",
+    "attack": 1,
+    "defense": 3,
+    "abilities": [
+      "Defends against Crossbows."
+    ],
+    "magic": "Your opponents each discard 1 card of your choice."
+  },
+  {
+    "name": "Spiked Shield",
+    "attack": 2,
+    "defense": 3,
+    "abilities": [
+      "Defends against Crossbows.",
+      "Deals 1 damage to the attacker when defending melee attacks."
+    ],
+    "magic": "Deal 1 damage OR heal 1 health."
+  }
+]

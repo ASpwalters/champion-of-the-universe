@@ -1,0 +1,1 @@
+export { ItemsGrid } from './ItemsGrid'
