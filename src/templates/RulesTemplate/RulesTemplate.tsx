@@ -6,7 +6,9 @@ export const RulesTemplate: React.FC = () => {
   return (
     <div className="text-base">
       <header>
-        <h1 className="text-xl text-center">Rules of the Universe!</h1>
+        <Container>
+          <h1 className="text-xl text-center">Rules of the Universe!</h1>
+        </Container>
       </header>
       <Container>
         <section>

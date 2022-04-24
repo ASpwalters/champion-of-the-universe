@@ -1,13 +1,19 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
-import heroes from '@/data/heroes.json'
 import { HeroesGrid } from '@/organisms/HeroesGrid'
+import { Hero } from '@/services/HeroesService'
 
-export const HeroesTemplate: React.FC = () => {
+interface HeroesTemplateProps {
+  heroes: Hero[]
+}
+
+export const HeroesTemplate: React.FC<HeroesTemplateProps> = ({ heroes }) => {
   return (
     <div>
       <header>
-        <h1 className="text-xl text-center">Heroes of the Universe!</h1>
+        <Container>
+          <h1 className="text-xl text-center">Heroes of the Universe!</h1>
+        </Container>
       </header>
       <main>
         <Container>

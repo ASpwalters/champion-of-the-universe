@@ -6,12 +6,15 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Champions of the Universe!</title>
+        <title>Champion of the Universe!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="text-center">
         <Container>
-          <h1 className="text-xl text-center">Champions of the Universe!</h1>
+          <h1 className="text-xl text-center">
+            Champion
+            <br /> of the Universe!
+          </h1>
           <p className="text-lg text-gray-500">An original game by Joseph McKenna</p>
         </Container>
       </main>

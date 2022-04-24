@@ -8,7 +8,9 @@ export const ItemsTemplate: React.FC = () => {
   return (
     <div>
       <header>
-        <h1 className="text-xl text-center">Items of the Universe!</h1>
+        <Container>
+          <h1 className="text-xl text-center">Items of the Universe!</h1>
+        </Container>
       </header>
       <main>
         <Container>

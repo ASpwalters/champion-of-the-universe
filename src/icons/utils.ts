@@ -16,12 +16,12 @@ interface TwoColorIconProps {
 }
 
 interface SquareIconProps {
-  size?: number | null
+  size?: number | string | null
 }
 
 interface RectangularIconProps {
-  height?: number | null
-  width?: number | null
+  height?: number | string | null
+  width?: number | string | null
 }
 
 export interface SquareOneColorIconProps extends BaseIconProps, SquareIconProps, OneColorIconProps {}

@@ -33,3 +33,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# this has the apikey for cms in it...
+.graphqlconfig

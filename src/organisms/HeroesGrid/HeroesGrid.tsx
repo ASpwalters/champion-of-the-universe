@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid } from '@/atoms/Grid'
-import { HeroCard, Hero } from '@/molecules/HeroCard'
+import { HeroCard } from '@/molecules/HeroCard'
+import { Hero } from '@/services/HeroesService'
 
 interface HeroesGridProps {
   heroes: Hero[]

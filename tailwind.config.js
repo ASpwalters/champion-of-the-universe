@@ -8,18 +8,21 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media',
   theme: {
-    extend: {},
+    extend: {
+      height: fractions,
+      width: fractions,
+      minHeight: fractions,
+      minWidth: fractions,
+      maxHeight: fractions,
+      maxWidth: fractions,
+      aspectRatio: {
+        card: '5/7',
+      },
+    },
     colors,
     fontSize: {
       ...fontSizes,
     },
-    aspectRatio: {
-      card: '5/7',
-    },
-    minHeight: fractions,
-    minWidth: fractions,
-    maxHeight: fractions,
-    maxWidth: fractions,
   },
   variants: {
     extend: {},

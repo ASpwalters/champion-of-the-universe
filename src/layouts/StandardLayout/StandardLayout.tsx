@@ -1,5 +1,7 @@
 import React from 'react'
+import { ApolloProvider } from '@apollo/client'
 import Link from 'next/link'
+import { client } from '@/services/ApolloClient'
 
 interface StandardLayoutProps {
   children: React.ReactNode
@@ -24,7 +26,7 @@ export const StandardLayout: React.FC<StandardLayoutProps> = ({ children }) => {
           </li>
         </ul>
       </nav>
-      {children}
+      <ApolloProvider client={client}>{children}</ApolloProvider>
       <footer className="mt-8 py-8" />
     </div>
   )
