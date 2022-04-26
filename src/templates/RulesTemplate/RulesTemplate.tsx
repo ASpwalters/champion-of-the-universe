@@ -111,14 +111,17 @@ export const RulesTemplate: React.FC = () => {
                   After the attack, the attack card and defense card (if applicable) are placed in their respective
                   discard piles.
                 </li>
-                <li>On every players turn, including your own, you may use 1 of your cards for its magic ability.</li>
+                <li>
+                  On every players turn, including your own, you may use 1 of your cards for its magic ability by{' '}
+                  <b>Exhausting</b> it.
+                </li>
                 <li>
                   At the end of every players turn, wounds set in-- if you are at 0 health or if all of your cards are{' '}
                   <b>Exhausted</b>, your character dies and you are NOT the Champion of the Universe!
                 </li>
                 <li>
                   At the end of any players turn that all players have 0 cards in hand, all players take their discard
-                  piles into their hands.
+                  piles into their hands. Cards that are <b>Exhausted</b> do not return to their owners hands.
                 </li>
                 <li>
                   Health cannot be higher than your characters starting health and cannot be reduced lower than 0.
