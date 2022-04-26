@@ -17,6 +17,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       items: equipments,
     },
+    revalidate: 60 * 60,
   }
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import RichText from '@madebyconnor/rich-text-to-jsx'
 import { Card } from '@/atoms/Card'
 import { RangedIcon } from '@/icons/RangedIcon'
 import { ShieldIcon } from '@/icons/ShieldIcon'
