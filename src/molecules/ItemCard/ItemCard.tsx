@@ -1,29 +1,21 @@
 import React from 'react'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import RichText from '@madebyconnor/rich-text-to-jsx'
 import { Card } from '@/atoms/Card'
 import { RangedIcon } from '@/icons/RangedIcon'
 import { ShieldIcon } from '@/icons/ShieldIcon'
 import { StarIcon } from '@/icons/StarIcon'
 import { SwordIcon } from '@/icons/SwordIcon'
+import { Equipment } from '@/services/EquipmentsService'
 
-export interface Item {
-  name: string
-  attack: number
-  defense: number
-  magic: string
-  legendary?: boolean
-  image?: string
-  damageType?: 'ranged' | 'melee'
-  abilities?: string[]
-}
-
-export const ItemCard: React.FC<Item> = ({
+export const ItemCard: React.FC<Equipment> = ({
   name,
   attack,
   defense,
   magic,
   legendary = false,
   damageType = 'melee',
-  abilities = [],
+  ability = [],
 }) => {
   return (
     <Card legendary={legendary} className="text-white bg-gray-700">
@@ -34,16 +26,16 @@ export const ItemCard: React.FC<Item> = ({
       <div className="h-3/8 w-full flex flex-col bg-gray-700 mt-auto">
         <div className="mt-auto overflow-y-auto p-4 w-full text-gray-50">
           <ul>
-            {abilities.map((ability) => (
-              <li key={ability}>{ability}</li>
+            {ability?.map((a) => (
+              <li key={a}>{a}</li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="h-1/4 min-h-1/4 flex-grow-0 w-full bg-magic text-black relative text-center flex">
+      <div className="h-1/4 min-h-1/4 flex-grow-0 overflow-y-auto w-full bg-magic text-black relative text-center flex">
         <StarIcon className="mx-auto" color="white" width="50%" height={null} />
         <div className="absolute top-2 left-2 bottom-2 right-2 flex">
-          <div className="relative w-full my-auto">{magic}</div>
+          <div className="relative w-full my-auto">{documentToReactComponents(magic.json)}</div>
         </div>
       </div>
       <div className="h-1/4 max-h-1/4 w-full flex shrink-0">
