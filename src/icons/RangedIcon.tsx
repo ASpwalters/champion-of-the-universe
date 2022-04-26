@@ -6,8 +6,8 @@ export const RangedIcon: React.FC<SquareOneColorIconProps> = ({ size = 32, color
 
   return (
     <svg
-      width={size ?? ''}
-      height={size ?? ''}
+      width={size ?? '100%'}
+      height={size ?? '100%'}
       className={className}
       fill={c1}
       viewBox="0 0 1024 1024"

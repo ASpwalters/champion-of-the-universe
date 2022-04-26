@@ -1,12 +1,13 @@
 import React from 'react'
 import { Grid } from '@/atoms/Grid'
-import { ItemCard, Item } from '@/molecules/ItemCard'
+import { ItemCard } from '@/molecules/ItemCard'
+import { Equipment } from '@/services/EquipmentsService'
 
-interface HeroesGridProps {
-  items: Item[]
+interface ItemsGridProps {
+  items: Equipment[]
 }
 
-export const ItemsGrid: React.FC<HeroesGridProps> = ({ items }) => {
+export const ItemsGrid: React.FC<ItemsGridProps> = ({ items }) => {
   return (
     <Grid>
       {items.map((item) => (

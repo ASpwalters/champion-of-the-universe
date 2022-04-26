@@ -1,10 +1,13 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
-import items from '@/data/items.json'
-import { Item } from '@/molecules/ItemCard'
 import { ItemsGrid } from '@/organisms/ItemsGrid'
+import { Equipment } from '@/services/EquipmentsService'
 
-export const ItemsTemplate: React.FC = () => {
+interface ItemsTemplateProps {
+  items: Equipment[]
+}
+
+export const ItemsTemplate: React.FC<ItemsTemplateProps> = ({ items }) => {
   return (
     <div>
       <header>
@@ -14,7 +17,7 @@ export const ItemsTemplate: React.FC = () => {
       </header>
       <main>
         <Container>
-          <ItemsGrid items={items as Item[]} />
+          <ItemsGrid items={items} />
         </Container>
       </main>
     </div>
