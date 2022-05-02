@@ -10,7 +10,7 @@ interface StandardLayoutProps {
 export const StandardLayout: React.FC<StandardLayoutProps> = ({ children }) => {
   return (
     <div>
-      <nav>
+      <nav className="print:hidden">
         <ul className="flex space-x-4 justify-center my-8">
           <li>
             <Link href="/">Home</Link>
@@ -27,7 +27,7 @@ export const StandardLayout: React.FC<StandardLayoutProps> = ({ children }) => {
         </ul>
       </nav>
       <ApolloProvider client={client}>{children}</ApolloProvider>
-      <footer className="mt-8 py-8" />
+      <footer className="mt-8 py-8 print:hidden" />
     </div>
   )
 }

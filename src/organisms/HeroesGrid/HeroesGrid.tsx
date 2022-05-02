@@ -9,7 +9,7 @@ interface HeroesGridProps {
 
 export const HeroesGrid: React.FC<HeroesGridProps> = ({ heroes }) => {
   return (
-    <Grid>
+    <Grid className="print:block">
       {heroes.map((hero) => (
         <HeroCard key={hero.name} {...hero} />
       ))}

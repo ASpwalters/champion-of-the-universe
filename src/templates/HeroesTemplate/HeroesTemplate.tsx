@@ -10,7 +10,7 @@ interface HeroesTemplateProps {
 export const HeroesTemplate: React.FC<HeroesTemplateProps> = ({ heroes }) => {
   return (
     <div>
-      <header>
+      <header className="print:hidden">
         <Container>
           <h1 className="text-xl text-center">Heroes of the Universe!</h1>
         </Container>

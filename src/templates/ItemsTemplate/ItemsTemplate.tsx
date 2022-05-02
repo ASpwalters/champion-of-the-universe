@@ -10,7 +10,7 @@ interface ItemsTemplateProps {
 export const ItemsTemplate: React.FC<ItemsTemplateProps> = ({ items }) => {
   return (
     <div>
-      <header>
+      <header className="print:hidden">
         <Container>
           <h1 className="text-xl text-center">Items of the Universe!</h1>
         </Container>

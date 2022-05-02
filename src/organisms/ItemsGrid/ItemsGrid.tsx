@@ -9,7 +9,7 @@ interface ItemsGridProps {
 
 export const ItemsGrid: React.FC<ItemsGridProps> = ({ items }) => {
   return (
-    <Grid>
+    <Grid className="print:block">
       {items.map((item) => (
         <ItemCard key={item.name} {...item} />
       ))}
