@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
+import { PrintButton } from '@/molecules/PrintButton'
 import { HeroesGrid } from '@/organisms/HeroesGrid'
 import { Hero } from '@/services/HeroesService'
 
@@ -12,7 +13,8 @@ export const HeroesTemplate: React.FC<HeroesTemplateProps> = ({ heroes }) => {
     <div>
       <header className="print:hidden">
         <Container>
-          <h1 className="text-xl text-center">Heroes of the Universe!</h1>
+          <h1 className="text-xl text-center leading-none">Heroes of the Universe!</h1>
+          <PrintButton />
         </Container>
       </header>
       <main>

@@ -11,7 +11,15 @@ export const ItemsGrid: React.FC<ItemsGridProps> = ({ items }) => {
   return (
     <Grid className="print:block">
       {items.map((item) => (
-        <ItemCard key={item.name} {...item} />
+        <>
+          <ItemCard key={item.name} {...item} />
+          {!item.legendary && (
+            <>
+              <ItemCard key={item.name} {...item} className="hidden print:block" />
+              <ItemCard key={item.name} {...item} className="hidden print:block" />
+            </>
+          )}
+        </>
       ))}
     </Grid>
   )

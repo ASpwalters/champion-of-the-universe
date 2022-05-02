@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="text-center">
         <Container>
-          <h1 className="text-xl text-center">
+          <h1 className="text-xl text-center leading-none">
             Champion
             <br /> of the Universe!
           </h1>

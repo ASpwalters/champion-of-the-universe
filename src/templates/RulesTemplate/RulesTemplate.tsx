@@ -7,7 +7,7 @@ export const RulesTemplate: React.FC = () => {
     <div className="text-base">
       <header>
         <Container>
-          <h1 className="text-xl text-center">Rules of the Universe!</h1>
+          <h1 className="text-xl text-center leading-none">Rules of the Universe!</h1>
         </Container>
       </header>
       <Container>

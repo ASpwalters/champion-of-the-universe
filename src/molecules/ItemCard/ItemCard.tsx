@@ -1,5 +1,6 @@
 import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import classNames from 'classnames'
 import { Card } from '@/atoms/Card'
 import { RangedIcon } from '@/icons/RangedIcon'
 import { ShieldIcon } from '@/icons/ShieldIcon'
@@ -7,7 +8,11 @@ import { StarIcon } from '@/icons/StarIcon'
 import { SwordIcon } from '@/icons/SwordIcon'
 import { Equipment } from '@/services/EquipmentsService'
 
-export const ItemCard: React.FC<Equipment> = ({
+interface ItemCardProps extends Equipment {
+  className?: string
+}
+
+export const ItemCard: React.FC<ItemCardProps> = ({
   name,
   attack,
   defense,
@@ -15,11 +20,12 @@ export const ItemCard: React.FC<Equipment> = ({
   legendary = false,
   damageType = 'melee',
   ability = [],
+  className,
 }) => {
   const totalAbilityLength = ability?.reduce((total, a) => total + a.length, 0)
 
   return (
-    <Card legendary={legendary} className="print:text-black text-white bg-gray-700">
+    <Card legendary={legendary} className={classNames('print:text-black text-white bg-gray-700 print:mt-1', className)}>
       <div className="h-1/8 relative p-2 bg-gray-700">
         <div className="font-bold">{name}</div>
         {legendary && <div className="text-legendary">Legendary</div>}

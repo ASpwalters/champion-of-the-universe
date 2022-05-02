@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from '@/atoms/Container'
+import { PrintButton } from '@/molecules/PrintButton'
 import { ItemsGrid } from '@/organisms/ItemsGrid'
 import { Equipment } from '@/services/EquipmentsService'
 
@@ -12,7 +13,8 @@ export const ItemsTemplate: React.FC<ItemsTemplateProps> = ({ items }) => {
     <div>
       <header className="print:hidden">
         <Container>
-          <h1 className="text-xl text-center">Items of the Universe!</h1>
+          <h1 className="text-xl text-center leading-none">Items of the Universe!</h1>
+          <PrintButton />
         </Container>
       </header>
       <main>
