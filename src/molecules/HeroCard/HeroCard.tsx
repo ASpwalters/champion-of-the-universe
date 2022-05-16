@@ -5,7 +5,7 @@ import { Hero } from '@/services/HeroesService'
 
 export const HeroCard: React.FC<Hero> = ({ name, maxHealth, ability, image }) => {
   return (
-    <Card image={image?.url} className="text-white print:text-black bg-gray-700">
+    <Card image={image?.url} className="text-white bg-gray-700">
       <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-gray-900 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-b from-transparent to-gray-900" />
       <div className="absolute top-2 left-2 bottom-2 right-2">
